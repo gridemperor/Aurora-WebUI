@@ -56,10 +56,10 @@ define("C_DB_PASS","***");
 ## Configuration
 
 ### For grid mode (running Aurora.Server.exe)
-Copy AuroraService/WebAPI.ini to your ~/Aurora-Sim/bin/AuroraServerConfiguration/Modules directory
+Copy AuroraService/WebUI.ini to your ~/Aurora-Sim/bin/AuroraServerConfiguration/Modules directory
 
 ### For standalone mode (just running Aurora.exe)
-Copy AuroraService/WebAPI.ini to your ~/Aurora-Sim/bin/Configuration/Modules directory
+Copy AuroraService/WebUI.ini to your ~/Aurora-Sim/bin/Configuration/Modules directory
 
 # Admin Panel
 The Admin Panel is located at:
