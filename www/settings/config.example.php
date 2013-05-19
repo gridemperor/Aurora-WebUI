@@ -27,6 +27,20 @@ define("WEBUI_PASSWORD","Password");
 // (until disabled here)?
 $displayMaintenancePage = false;
 
+##################### SIMPLE CURRENCY #########################
+// Configure this if you want to use the Simple Currency Module in your Aurora-WebUI
+define("SIMPLECURRENCY_SERVICE_URL","http://localhost:8007/SimpleCurrencyWebUI"); // Change this to your server url for the WebUI
+$banker_id = '00000000-0000-0000-0000-000000000000'; // Change this to the UUID of your banker id in-world
+
+$incompletePurchaseEmailandErrors = 'you@yourdomain.com'; // Change this to your email address where error messages should go to
+
+$payPalURL = 'www.sandbox.paypal.com';
+$auth_token = "eK2d7-QOTrnwhqaJI2n-SpJ98p5Zb6V62lNekl8BdH-1-Q_PUCwzaDvokeW"; // Change this to the token you created at http://www.paypal.com
+$payPalAccount = 'your_paypal_account_email@gmail.com'; // Change this to your paypal email address
+$notifyURL = 'http://localhost/app/economy/paypal_verify.php'; // Change localhost to the server url for your server
+$returnURL = 'http://localhost/index.php?page=paypalcomplete'; // change localhost to the server url for your server
+
+$AmountAdditionPerfectage = 0.0291;
 ################### Downloads Page ###################
 $FirestormVersion = "Firestorm v4.4.0.33720";
 define("Firestorm_Windows","http://downloads.phoenixviewer.com/windows/Phoenix_Firestorm-Release_4-4-0-33720_SetupOS.exe");
