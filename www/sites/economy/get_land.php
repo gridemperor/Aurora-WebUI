@@ -15,7 +15,7 @@ if (!$_SESSION[USERID]) header("Location: index.php?page=Home");
 								
 								<center>Get yourself a Island.</center>
 		<?
-			$DbLink->query("SELECT id, name, description, price FROM simplecurrency_subscriptions Where active='1' ORDER BY price ASC ");
+			$DbLink->query("SELECT id, name, description, price FROM simple_currency_subscriptions Where active='1' ORDER BY price ASC ");
 			$counter = 0;
 			while (list($id, $name, $description, $price,) = $DbLink->next_record()) { $counter++;
 		?>
