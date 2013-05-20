@@ -6,7 +6,7 @@ include("settings/simplecurrency.php");
 $DbLink3 = new DB;
 $DbLink3->query("SELECT RegionName FROM gridregions WHERE RegionName = '".cleanQuery($_POST[name])."'");
 $DbLink2 = new DB;
-$DbLink2->query("SELECT PrincipalID FROM simplecurrency_purchased WHERE RegionName = '".cleanQuery($_POST[name])."' AND Complete = 1");
+$DbLink2->query("SELECT PrincipalID FROM simple_purchased WHERE RegionName = '".cleanQuery($_POST[name])."' AND Complete = 1");
 
 if ($DbLink2->num_rows() + $DbLink3->num_rows() > 0)
 {
